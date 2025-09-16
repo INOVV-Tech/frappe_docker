@@ -106,6 +106,7 @@ services:
     networks:
       - frappe_network
     depends_on:
+      - backend
       - websocket
     deploy:
       restart_policy:
